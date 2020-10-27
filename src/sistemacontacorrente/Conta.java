@@ -1,33 +1,60 @@
 package sistemacontacorrente;
 
 public class Conta {
-	int numero;
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public double getLimite() {
+		return limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+
+int numero;
 	String nome;
 	double saldo;
 	double limite;
 	
 	boolean sacar(double valor) {
-	//	double saldoAlterado = saldo - valor;
-	//	saldo = saldoAlterado;
-	
-		// OUTRA OPÇÃO1
-	//	saldo = saldo - valor;
-	
-		// OUTRA OPÇÃO2
-	// saldo -= valor;
-	
-		// OUTRA OPÇÃO3
-	//this.saldo -= valor;
-		if (valor <= this.saldo + this.limite) {
+		//double saldoAlterado = saldo - valor;
+		//saldo = saldoAlterado;
+		//OUTRO OPCAO1
+		//saldo = saldo - valor;
+		//OUTRO OPCAO2
+		//saldo -= valor;
+		//OUTRO OPCAO3
+		//this.saldo -= valor;
+		if (valor <= this.saldo+this.limite) {
 			this.saldo -= valor;
 			return true;
-			
-		} else {
-			return false;
 		}
+		return false;
 	}
 	
-	void depositar(double valor) {
+	public void depositar(double valor) {
 		this.saldo += valor;
 	}
 }

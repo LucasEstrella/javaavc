@@ -19,7 +19,7 @@ public class Conta2 {
 	}
 	
 	public String toString() {
-		return("Número:"+this.numero+ "\nNome: " +this.nome+ "\nSaldo"+this.saldo+ "\nLimite: "+this.limite);
+		return("Numemero:"+this.numero+ "\nNome: " +this.nome+ "\nSaldo"+this.saldo+ "\nLimite: "+this.limite);
 	}
 
 }

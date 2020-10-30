@@ -29,8 +29,8 @@ public class TestaMath {
 		System.out.println(Math.pow(5,2));//Potênciação, eleva o primeiro número com a potência do segundo.
 		System.out.println(Math.sqrt(121));// Raiz Quadrada.
 		System.out.println(Math.sin(360));
-		System.out.println(Math.toDegrees(angrad));
-		System.out.println(Math.toRadians(angdeg));
+		//System.out.println(Math.toDegrees(angded));
+		//System.out.println(Math.toRadians(angdeg));
 		
 		
 //Para Casa: Obs: depois subir para o Github
